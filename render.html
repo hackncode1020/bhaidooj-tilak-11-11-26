@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0b0620}
+svg{display:block;position:absolute;left:0;top:0}</style></head><body>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+<script>
+window.__now=0;window.__cb=null;
+performance.now=()=>window.__now;
+window.requestAnimationFrame=cb=>{window.__cb=cb;return 1};
+</script>
+<script src="code.js"></script>
+<script>window.step=t=>{window.__now=t*1000;const c=window.__cb;if(c)c();}</script>
+</body></html>
